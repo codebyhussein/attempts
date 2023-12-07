@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:qr_code/nlp_task.dart';
 
-import 'package:qr_code/weightScreen.dart';
+import 'package:qr_code/bootom_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // theme: ThemeData(
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      //   useMaterial3: true,
+      // ),
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.blue,
       ),
-      home: const Nlp_TaskScreen(),
+      home: MyHomePage(),
     );
   }
 }

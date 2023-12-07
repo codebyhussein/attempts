@@ -39,14 +39,18 @@ class _qrScreenState extends State<qrScreen> {
             child: QRView(
               key: qrKey,
               onQRViewCreated: _onQRViewCreated,
+              overlay: QrScannerOverlayShape(
+                borderColor: Colors.black,
+                borderRadius: 10,
+                borderLength: 10,
+              ),
             ),
           ),
           Expanded(
             flex: 1,
             child: Center(
               child: (result != null)
-                  ? Text(
-                      'Barcode Type: ${describeEnum(result!)}   Data: ${result!}')
+                  ? Text(' Data: ${result!}')
                   : const Text('Scan a code'),
             ),
           )
