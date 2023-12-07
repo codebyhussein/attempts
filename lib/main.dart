@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:qr_code/bootom_navigation_bar.dart';
+import 'package:qr_code/widgets/bootom_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }

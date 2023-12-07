@@ -5,7 +5,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:qr_code/api/result.dart';
-import 'package:qr_code/result_screen.dart';
 
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
