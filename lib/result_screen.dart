@@ -17,7 +17,7 @@ class ResultScreen extends StatelessWidget {
           },
         ),
       ),
-      body: Container(
+      body: Center(
         child: QrImageView(
           data: "iy4ruq4ueufgeufguegfue", //hussein huauu ahuhsu
           size: 150,
